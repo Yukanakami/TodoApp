@@ -1,7 +1,16 @@
-import type { Config } from "@react-router/dev/config";
+import { createBrowserRouter } from 'react-router-dom';
+import Root from './app/root'; // sesuaikan path jika pindah ke src/
+import Home from './app/pages/Home'; // halaman utama
 
-export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
-} satisfies Config;
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      }
+    ]
+  }
+]);
