@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react'; 
+import '../../app/app.css'
 
 
 type Props = {
@@ -26,7 +27,7 @@ function TodoInput({ onAdd }: Props) {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button className="bg-blue-500 text-white px-4 py-2 rounded">Add</button>
+      <button className="bg-blue-500 hover:bg-blue-900 text-white px-4 py-2 rounded">Add</button>
     </form>
   );
 }

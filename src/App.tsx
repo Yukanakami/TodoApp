@@ -52,9 +52,9 @@ function App() {
       <h1 className="text-2xl font-bold mb-4">To-Do List</h1>
       <TodoInput onAdd={addTodo} />
       <div className="flex gap-2 mb-4">
-        <button onClick={() => setFilter('all')} className={`px-2 py-1 border rounded ${filter === 'all' ? 'bg-blue-100' : ''}`}>All</button>
-        <button onClick={() => setFilter('active')} className={`px-2 py-1 border rounded ${filter === 'active' ? 'bg-blue-100' : ''}`}>Active</button>
-        <button onClick={() => setFilter('completed')} className={`px-2 py-1 border rounded ${filter === 'completed' ? 'bg-blue-100' : ''}`}>Completed</button>
+        <button onClick={() => setFilter('all')} className={`px-2 py-1 border rounded ${filter === 'all' ? 'bg-zinc-400 ' : ''}`}>All</button>
+        <button onClick={() => setFilter('active')} className={`px-2 py-1 border rounded ${filter === 'active' ? 'bg-zinc-400' : ''}`}>Active</button>
+        <button onClick={() => setFilter('completed')} className={`px-2 py-1 border rounded ${filter === 'completed' ? 'bg-zinc-400' : ''}`}>Completed</button>
       </div>
       <TodoList todos={filteredTodos} onToggle={toggleComplete} onDelete={deleteTodo} />
       <div className="mt-4 text-sm text-gray-600">
