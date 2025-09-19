@@ -26,4 +26,4 @@ function TodoItem({ todo, onToggle, onDelete }: Props) {
   );
 }
 
-export default TodoItem
+export default TodoItem;
