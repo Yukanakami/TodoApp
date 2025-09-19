@@ -32,5 +32,5 @@ function TodoInput({ onAdd }: Props) {
   );
 }
 
-export default TodoInput
+export default TodoInput;
     
